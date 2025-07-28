@@ -1,1 +1,165 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@font-face {
+  font-family: myletra;
+  src: url("../src/assets/fonts/HankenGrotesk-Black.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra2;
+  src: url("../src/assets/fonts/HankenGrotesk-BlackItalic.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra3;
+  src: url("../src/assets/fonts/HankenGrotesk-Bold.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra4;
+  src: url("../src/assets/fonts/HankenGrotesk-BoldItalic.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra5;
+  src: url("../src/assets/fonts/HankenGrotesk-ExtraBold.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra6;
+  src: url("../src/assets/fonts/HankenGrotesk-ExtraBoldItalic.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra7;
+  src: url("../src/assets/fonts/HankenGrotesk-ExtraLight.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra8;
+  src: url("../src/assets/fonts/HankenGrotesk-ExtraLightItalic.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra9;
+  src: url("../src/assets/fonts/HankenGrotesk-Italic-VariableFont_wght.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra10;
+  src: url("../src/assets/fonts/HankenGrotesk-Italic.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra11;
+  src: url("../src/assets/fonts/HankenGrotesk-Light.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra12;
+  src: url("../src/assets/fonts/HankenGrotesk-LightItalic.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra13;
+  src: url("../src/assets/fonts/HankenGrotesk-Medium.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra14;
+  src: url("../src/assets/fonts/HankenGrotesk-MediumItalic.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra15;
+  src: url("../src/assets/fonts/HankenGrotesk-Regular.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra16;
+  src: url("../src/assets/fonts/HankenGrotesk-SemiBold.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra17;
+  src: url("../src/assets/fonts/HankenGrotesk-SemiBoldItalic.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra18;
+  src: url("../src/assets/fonts/HankenGrotesk-Thin.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra19;
+  src: url("../src/assets/fonts/HankenGrotesk-ThinItalic.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra20;
+  src: url("../src/assets/fonts/HankenGrotesk-VariableFont_wght.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra21;
+  src: url("../src/assets/fonts/RockSalt-Regular.ttf")format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra22;
+  src: url("../src/assets/fonts/ShadowsIntoLight-Regular.ttf")format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra23;
+  src: url("../src/assets/fonts/IndieFlower-Regular.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra24;
+  src: url("../src/assets/fonts/GloriaHallelujah-Regular.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra25;
+  src: url("../src/assets/fonts/Roboto-VariableFont_wdth\,wght.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: myletra26;
+  src: url("../src/assets/fonts/SpecialElite-Regular.ttf")format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+font-family: 'myletra24', sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: myletra1, "Helvetica Neue", sans-serif; }
