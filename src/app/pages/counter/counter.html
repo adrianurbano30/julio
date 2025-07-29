@@ -1,6 +1,8 @@
-<div class="text-white text-base flex flex-col">
- <h1 class="text-3xl text-center">this is the counter  <span class="text-5xl text-red-700">{{aux}}</span></h1>
-<button class="p-2 text-white text-lg rounded-md bg-green-800 my-2 cursor-pointer" (click)="increment()">increment</button>
-<button class="p-2 text-white text-lg rounded-md bg-red-800 my-2 cursor-pointer" (click)="decrement()">decrement</button>
-<button class="p-2 text-black text-lg rounded-md bg-gray-100 my-2 cursor-pointer" (click)="reset()" >reset</button>
+<div class="text-white text-base flex flex-col h-screen items-center justify-center">
+  <a routerLink="" class="text-gray-400 font-bold text-2xl">Back home</a>
+  <h1 class="text-3xl text-center">this is the counter value  <span class="text-5xl text-red-700">{{aux}}</span></h1>
+  <h1 class="text-3xl text-center">this is the Signal counter value  <span class="text-5xl text-red-700">{{aux_signal()}}</span></h1>
+  <button class="p-2 text-white text-lg rounded-md bg-green-800 my-2 cursor-pointer" (click)="increment()">increment</button>
+  <button class="p-2 text-white text-lg rounded-md bg-red-800 my-2 cursor-pointer" (click)="decrement()">decrement</button>
+  <button class="p-2 text-black text-lg rounded-md bg-gray-100 my-2 cursor-pointer" (click)="reset()" >reset</button>
 </div>
