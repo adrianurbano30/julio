@@ -1,9 +1,10 @@
-import { Component, signal } from '@angular/core';
+import { UpperCasePipe } from '@angular/common';
+import { Component, computed, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
-  imports: [RouterLink],
+  imports: [RouterLink,UpperCasePipe],
   templateUrl: './hero.html',
   styleUrl: './hero.css'
 })
@@ -12,12 +13,19 @@ export class Hero {
   name = signal<string>('IronMan');
   age = signal<number>(45);
 
+  herodescription = computed(()=>{
+    const description = this.name()+' is '+this.age()+'years old';
+    return description;
+  });
 
-  getHeroDescription(){
+  capitalizedName = computed(()=>{this.name().toUpperCase()});
 
-    return this.name() + ' is ' + this.age() + ' years old.';
 
-  }
+  // getHeroDescription(){
+
+  //   return this.name() + ' is ' + this.age() + ' years old.';
+
+  // }
 
   changeHero(){
 
@@ -30,7 +38,7 @@ export class Hero {
   }
 
   resetHero(){
-    this.name.set('IRONMAN');
+    this.name.set('IronMan');
     this.age.set(45);
   }
 
