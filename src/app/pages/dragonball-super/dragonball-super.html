@@ -4,9 +4,9 @@
 
   <div class="flex flex-row">
 
-  <app-character-app (newCharacter)="addCaracter($event)"></app-character-app>
+  <app-character-app (newCharacter)="dragonballSVC.addCaracter($event)"></app-character-app>
 
-   <app-character-list listName="Listado de Personajes" [characters]="characters()" ></app-character-list>
+   <app-character-list listName="Listado de Personajes" [characters]="dragonballSVC.characters()" ></app-character-list>
 
   </div>
 

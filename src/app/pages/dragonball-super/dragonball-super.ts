@@ -1,7 +1,8 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { CharacterListComponent } from "../../components/dragonball/character-list/character-list.component";
 import { chacracter } from '../../interfaces/character.interface';
 import { CharacterAppComponent } from "../../components/dragonball/character-app/character-app.component";
+import { Dragonball } from '../../services/dragonball';
 
 
 
@@ -13,14 +14,15 @@ import { CharacterAppComponent } from "../../components/dragonball/character-app
 })
 export class DragonballSuper {
 
+    public dragonballSVC = inject(Dragonball);
 
-    characters = signal<chacracter[]>([
-      { id:1, name: 'Goku', power: 9000 },
-      { id:1, name: 'Vegeta', power: 8000 },
-    ]);
+    // characters = signal<chacracter[]>([
+    //   { id:1, name: 'Goku', power: 9000 },
+    //   { id:1, name: 'Vegeta', power: 8000 },
+    // ]);
 
-    addCaracter(character:chacracter){
-      this.characters.update((list)=>[...list,character]);
-    }
+    // addCaracter(character:chacracter){
+    //   this.characters.update((list)=>[...list,character]);
+    // }
 
 }
