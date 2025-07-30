@@ -3,13 +3,16 @@
         <div class="flex items-center">
             <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                 <li>
-                    <a  routerLink="inicio" routerLinkActive="bg-sky-50 text-sky-700" class="  p-2 text-blue-50 transition duration-700 rounded-md text-lg ">Home</a>
+                    <a  routerLink="/" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="bg-sky-50 text-sky-700" class="  p-2 text-blue-50 transition duration-700 rounded-md text-lg ">Home</a>
                 </li>
                 <li>
-                    <a  routerLink="counter" routerLinkActive="bg-sky-50 text-sky-700" class="  p-2 text-blue-50 transition rounded-md text-lg duration-700 ">Counter</a>
+                    <a  [routerLink]="['/counter']" [routerLinkActive]="['bg-sky-50','text-sky-700']" class="  p-2 text-blue-50 transition rounded-md text-lg duration-700 ">Counter</a>
                 </li>
                 <li>
                     <a  routerLink="hero" routerLinkActive="bg-sky-50 text-sky-700" class="  p-2 text-blue-50 transition rounded-md text-lg duration-700 ">HERO</a>
+                </li>
+                <li>
+                    <a  routerLink="dragonball" routerLinkActive="bg-sky-50 text-sky-700" class="  p-2 text-blue-50 transition rounded-md text-lg duration-700 ">Dragon Ball</a>
                 </li>
             </ul>
         </div>

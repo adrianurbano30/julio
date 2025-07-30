@@ -1,0 +1,27 @@
+<div class="h-screen flex flex-col items-center justify-center m-2">
+
+<h1 class="text-4xl text-sky-50">DRAGON BALL PAGE</h1>
+
+<div class="flex flex-row">
+
+  <div class="flex flex-col gap-3 mr-10">
+
+    <h1 class="text-2xl my-2 text-sky-50 ">Agregar personaje:{{name()}} </h1>
+
+    <input #txtname [value]="name()" (input)="name.set(txtname.value)"  type="text" class="bg-white rounded-md p-2 placeholder-blue-950" placeholder="Nombre" >
+    <input #txtpower [value]="power()" (input)="power.set(+txtpower.value)" type="number" class="bg-white rounded-md p-2 placeholder-blue-950" placeholder="Poder" >
+    <button (click)="addcharacter()" class="bg-green-500 p-1 text-xl text-white rounded-xl cursor-pointer">guardar</button>
+
+  </div>
+
+  <div class="flex flex-col">
+    <h1 class="text-2xl my-2 text-sky-50">Lista</h1>
+    @for (character of characters(); track character.id) {
+      @if (character.power>=8000) {
+      <h2  class="text-2xl text-sky-50 font-bold">{{character.name}} <span  [ngClass]="{'text-red-800':character.power>=9000,'text-blue-600':character.power<9000 }" class=" font-bold"> ({{character.power}}) </span> </h2>
+      }
+   }
+  </div>
+ </div>
+
+</div>
