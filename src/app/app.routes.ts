@@ -8,5 +8,6 @@ export const routes: Routes = [
   {path:'counter',loadComponent:()=>import('./pages/counter/counter').then(m=>m.Counter)},
   {path:'hero',loadComponent:()=>import('./pages/hero/hero').then(m=>m.Hero)},
   {path:'dragonball',loadComponent:()=>import('./pages/dragonball/dragonball').then(m=>m.Dragonball)},
+  {path:'dragonballsuper',loadComponent:()=>import('./pages/dragonball-super/dragonball-super').then(m=>m.DragonballSuper)},
   {path:'**',redirectTo:''}
 ];

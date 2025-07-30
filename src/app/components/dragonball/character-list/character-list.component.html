@@ -1,0 +1,8 @@
+<div class="flex flex-col">
+    <h1 class="text-5xl my-2 text-sky-50">{{listName()}} </h1>
+    @for (character of characters(); track character.name) {
+      @if (character.power>=8000) {
+      <h2  class="text-2xl text-sky-50 font-bold">{{character.name}} <span  [ngClass]="{'text-red-800':character.power>=9000,'text-sky-50':character.power<9000 }" class=" font-bold"> ({{character.power}}) </span> </h2>
+      }
+    }
+  </div>

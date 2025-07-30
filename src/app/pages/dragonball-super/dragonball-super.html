@@ -1,0 +1,13 @@
+<div class="h-screen flex flex-col items-center justify-center m-2">
+
+<h1 class="text-4xl text-sky-50">DRAGON BALL - SUPER PAGE</h1>
+
+  <div class="flex flex-row">
+
+  <app-character-app (newCharacter)="addCaracter($event)"></app-character-app>
+
+   <app-character-list listName="Listado de Personajes" [characters]="characters()" ></app-character-list>
+
+  </div>
+
+</div>

@@ -1,11 +1,8 @@
 import { NgClass } from '@angular/common';
 import { Component, signal } from '@angular/core';
+import { chacracter } from '../../interfaces/character.interface';
 
-interface chacracter{
-  id:number;
-  name:string;
-  power: number;
-}
+
 
 @Component({
   selector: 'app-dragonball',
